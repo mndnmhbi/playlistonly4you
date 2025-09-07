@@ -13,12 +13,12 @@ let currentSongIndex = 2;
 let isSongLoaded = false;
 
 const songs = [
-  "music/m1.mp3",
-  "music/m2.mp3",
-  "music/m3.mp3",
-  "music/m4.mp3",
-  "music/m5.mp3",
-  "music/m6.mp3",
+  "Music/m1.mp3",
+  "Music/m2.mp3",
+  "Music/m3.mp3",
+  "Music/m4.mp3",
+  "Music/m5.mp3",
+  "Music/m6.mp3",
 ];
 
 var swiper = new Swiper(".swiper", {
