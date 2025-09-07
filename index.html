@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  <title>PlayList</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css'><link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="flipbook">
+    <div class="hard"></div>
+    <div class="hard"></div>
+    <div>
+      <p id="welcome1">Hey!</p>
+      <p id="welcome2">Made this playlist for you 🎶</p>
+      <p id="welcome3">Hope you catch the hidden message</p>
+    </div>
+    <div>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="images/img1.png" />
+            <h3>You</h3>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="images/img2.png" />
+            <h3>We are choas</h3>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="images/img3.jpeg" />
+            <h3>One in million</h3>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="images/img4.jpg" />
+            <h3>1000 People</h3>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="images/img5.jpg" />
+            <h3>Who i am</h3>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="images/img6.jpeg" />
+            <h3>Love song</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="player">
+        <audio
+          id="audioPlayer"
+          src="song-list/AfricanFella-CumbiaDeli.mp3"
+          type="audio/mpeg"></audio>
+
+        <div class="controls">
+          <i class="fa-solid fa-shuffle" id="shuffleBtn"></i>
+          <i class="fa-solid fa-backward" id="prevBtn"></i>
+          <button id="playPauseBtn">
+            <i class="fa-solid fa-play" id="playPauseIcon"></i>
+          </button>
+          <i class="fa-solid fa-forward" id="nextBtn"></i>
+          <div class="volume">
+            <i class="fa-solid fa-volume-high"></i>
+          </div>
+        </div>
+
+        <input type="range" value="0" id="progress-bar" />
+      </div>
+
+
+    </div>
+
+
+
+    
+    <div>
+      <div class="slider-playlist">
+          <div class="playlist">
+            <div class="playlist-item">
+              <img
+                src="images/img1.png"
+                alt="" />
+              <div class="song">
+                <p style="font-weight: bold;">You</p>
+                <p>Radiohead</p>
+              </div>
+              <p>3:29</p>
+              <i class="fa-regular fa-heart like-btn"></i>
+            </div>
+            <div class="playlist-item">
+              <img
+                src="images/img2.png"
+                alt="" />
+              <div class="song">
+                <p>We <span id="highlight" >are</span> chaos </p>
+                <p>Marilyn manson</p>
+              </div>
+              <p>4:01</p>
+              <i class="fa-regular fa-heart like-btn"></i>
+            </div>
+            <div class="playlist-item">
+              <img
+                src="images/img3.jpeg"
+                alt="" />
+              <div class="song">
+                <p style="font-weight: bold;">One in million</p>
+                <p>Guns N' Roses</p>
+              </div>
+              <p>6:09</p>
+              <i class="fa-regular fa-heart like-btn"></i>
+            </div>
+            <div class="playlist-item">
+              <img
+                src="images/img4.jpg"
+                alt="" />
+              <div class="song">
+                <p>1000 <span id="highlight">people</span></p>
+                <p>Blackfield</p>
+              </div>
+              <p>3:54</p>
+              <i class="fa-regular fa-heart like-btn"></i>
+            </div>
+            <div class="playlist-item">
+              <img
+                src="images/img5.jpg"
+                alt="" />
+              <div class="song">
+                <p><span id="highlight">Who i</span> am</p>
+                <p>Wage war</p>
+              </div>
+              <p>3:21</p>
+              <i class="fa-regular fa-heart like-btn"></i>
+            </div>
+            <div class="playlist-item">
+              <img
+                src="images/img6.jpeg"
+                alt="" />
+              <div class="song">
+                <p><span id="highlight">Love</span> song</p>
+                <p>Jack of jill</p>
+              </div>
+              <p>3:34</p>
+              <i class="fa-regular fa-heart like-btn"></i>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+
+
+
+  </div>
+  <img src="images/Bleach_Stickers.png" class="bleach-st" />
+  <img src="images/chill-sticker.png" class="chill-st" />
+  <img src="images/Limp_Bizkit_sticker.png" class="limp-st" />
+  <img src="images/kitties-sticker.png" class="kitty-st" />
+
+  <script src="jquery.js"></script>
+  <script src="turn.js"></script>
+  <script src='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js'></script>
+  <script  src="script.js"></script>
+
+  <script>
+    $(".flipbook").turn();
+  </script>
+</body>
+
+</html>
